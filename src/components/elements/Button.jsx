@@ -14,18 +14,18 @@ const sizes = {
   };
   
 const variants = {
-primary: 'bg-marigold focus:ring-marigold',
-secondary: 'bg-tomato focus:ring-tomato',
-dark: 'bg-black focus:ring-white',
+    primary: 'bg-marigold focus:ring-marigold',
+    secondary: 'bg-tomato focus:ring-tomato',
+    dark: 'bg-black focus:ring-white',
 };
-const {children} = require("react")
+
 
 const Button = ({
      children,
     className,
-size= 'small',
-variant = 'primacy',
-...rest
+    size= 'small',
+    variant = 'primacy',
+    ...rest
 }) => {
     return (
         <button className={clsx(
