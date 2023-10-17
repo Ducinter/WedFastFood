@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { ProductPreviewCard } from "./ProductPreviewCard";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { useDispatch } from "react-redux";
-import { addToCart } from "../stores/cart/cartSlice";
+// import { ProductPreviewCard } from "./ProductPreviewCard";
+// import Carousel from 'react-multi-carousel';
+// import 'react-multi-carousel/lib/styles.css';
+// import { useDispatch } from "react-redux";
+// import { addToCart } from "../stores/cart/cartSlice";
 
 
 export const ProductsPreview = () => {
@@ -31,7 +31,7 @@ export const ProductsPreview = () => {
     //   };
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/products')
+        fetch('http://localhost:3080/api/products')
             .then(response => response.json())
             .then(data => setProducts(data?.data))
             .catch(e => console.log(e))
@@ -42,14 +42,13 @@ export const ProductsPreview = () => {
     // }
     
     return (
-        <div className="container mx-auto pb-4 w-2/3 text-white bg-black">
+        <div className="container mx-auto pb-4 w-2/3 text-white">
             {/* <Carousel responsive={responsive}> */}
             <h2>Product</h2>
             {
                 products.length > 0 && products.map((product, index) => {
                     return (
-                        <div key = {index}>{product.name}
-                        </div>
+                        <div key = {index}>{product.name}</div>
                             
                             
                     )
