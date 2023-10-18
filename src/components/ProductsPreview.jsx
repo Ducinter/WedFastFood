@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ProductPreviewCard } from "./ProductPreviewCard";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { useDispatch } from "react-redux";
-import { addToCart } from "../stores/cart/cartSlice";
+// import 'react-multi-carousel/lib/styles.css';
 
 
 export const ProductsPreview = () => {

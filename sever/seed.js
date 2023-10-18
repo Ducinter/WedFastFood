@@ -5,7 +5,6 @@ const _ = require("lodash");
 async function main() {
     const uri = "mongodb://localhost://27017";
     const client = new MongoClient(uri);
-
     try {
         await client.connect();
 
