@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
-<<<<<<< HEAD
+
 // import 'react-multi-carousel/lib/styles.css';
-=======
 // import { ProductPreviewCard } from "./ProductPreviewCard";
 // import Carousel from 'react-multi-carousel';
 // import 'react-multi-carousel/lib/styles.css';
 // import { useDispatch } from "react-redux";
 // import { addToCart } from "../stores/cart/cartSlice";
->>>>>>> 67c234fe426b2901693fd82527704c7dc2600afe
+
 
 
 export const ProductsPreview = () => {
@@ -35,7 +34,7 @@ export const ProductsPreview = () => {
     //   };
 
     useEffect(() => {
-        fetch('http://localhost:3080/api/products')
+        fetch('http://localhost:8080/api/products')
             .then(response => response.json())
             .then(data => setProducts(data?.data))
             .catch(e => console.log(e))
