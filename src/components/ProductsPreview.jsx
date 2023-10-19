@@ -6,7 +6,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useDispatch } from "react-redux";
 import { addToCart } from "../stores/cart/cartSlice";
-// import { AddProduct } from "./AddProduct";
+import { AddProduct } from "./AddProduct";
 
 
 
